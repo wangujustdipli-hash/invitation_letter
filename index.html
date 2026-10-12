@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yul Go Ri | Invitation</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <main class="invitation">
+
+        <!-- Left side: Invitation details -->
+        <section class="invitation-content">
+
+            <header class="brand">
+                <div class="logo">Y</div>
+                <h2>Yul Go Ri</h2>
+                <p>EXPLORE · EXPERIENCE · DISCOVER</p>
+            </header>
+
+            <p class="eyebrow">YOU ARE CORDIALLY INVITED TO</p>
+
+            <h1>Project Launch <span>&</span> Presentation</h1>
+
+            <p class="tagline">
+                A journey to explore Bhutan, within Bhutan.
+            </p>
+
+            <p class="description">
+                Join us as we introduce Yul Go Ri, a domestic tourism
+                project dedicated to discovering Bhutan's hidden gems,
+                sacred places, and breathtaking destinations.
+            </p>
+
+            <div class="event-details">
+
+                <div class="detail">
+                    <span class="detail-icon">▦</span>
+                    <div>
+                        <h3>Date</h3>
+                        <p>20/10/2026</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <span class="detail-icon">◷</span>
+                    <div>
+                        <h3>Time</h3>
+                        <p>9:00PM</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <span class="detail-icon">⌖</span>
+                    <div>
+                        <h3>Venue</h3>
+                        <p>Younphula DSP Skilling center</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="closing">
+                Your presence will mean a lot to us as we take
+                this step towards a more connected Bhutan.
+            </p>
+
+            <div class="ornament">━━━━ ◆ ━━━━</div>
+
+            <p class="signature">Together, let's explore more.</p>
+
+        </section>
+
+        <!-- Right side: Scenic image -->
+        <section class="invitation-visual">
+
+            <div class="image-overlay"></div>
+
+            <div class="visual-content">
+                <p class="visual-brand">Yul Go Ri</p>
+                <p class="visual-subtitle">
+                    BHUTAN | DOMESTIC TOURISM
+                </p>
+
+                <div class="visual-bottom">
+                    <p class="visual-quote">
+                        Discover the places<br>
+                        most people don't know.
+                    </p>
+
+                    <button id="rsvpButton" class="rsvp-button">
+                        Confirm Attendance <span>→</span>
+                    </button>
+
+                    <button id="printButton" class="print-button">
+                        Print Invitation
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RSVP popup -->
+    <div class="modal" id="rsvpModal">
+        <div class="modal-content">
+            <button class="close-button" id="closeModal"
+                aria-label="Close">&times;</button>
+
+            <p class="eyebrow">YUL GO RI</p>
+            <h2>Will you join us?</h2>
+            <p>Please enter your details to confirm attendance.</p>
+
+            <form id="rsvpForm">
+                <label for="guestName">Your name</label>
+                <input type="text" id="guestName"
+                    placeholder="Enter your full name" required>
+
+                <label for="guestEmail">Email address</label>
+                <input type="email" id="guestEmail"
+                    placeholder="Enter your email" required>
+
+                <button type="submit" class="submit-button">
+                    Confirm My Attendance
+                </button>
+            </form>
+
+            <p id="confirmationMessage" class="confirmation"></p>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
